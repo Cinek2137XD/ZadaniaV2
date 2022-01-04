@@ -59,15 +59,15 @@ double group::mediana()//zwraca medianę grupy
 
 std::string best_groups_name(std::vector<group>& in) //porównuje mediany grup
 {
-    group& koxy = in[0];
+    group* koxy = &in[0];
     for(group& grupa : in)
     {
-        if (grupa.mediana()>= koxy.mediana())
+        if (grupa.mediana()>= koxy->mediana())
         {
-            koxy = grupa;
+            koxy = &grupa;
         }
     }
-    return koxy.nazwa;
+    return koxy->nazwa;
 }
 
 int main()
