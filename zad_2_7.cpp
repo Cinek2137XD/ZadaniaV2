@@ -10,7 +10,7 @@ struct group
 
 void add_to_group(std::string name, group* grupa)
 {
-    grupa->studenci.push_back(name);   //nie dodaje chuj wie czemu
+    grupa->studenci.push_back(name);   
 }
 int main()
 {
@@ -27,4 +27,5 @@ int main()
     {
         std::cout << Grupa.studenci[a]<<"\n";
     }
+    return 0;
 }
