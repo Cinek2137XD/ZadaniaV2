@@ -19,6 +19,7 @@ std::vector<std::string> split(std::string wejscie)
             do_vec ="";
         }
     }
+    slowa.push_back(do_vec);
     return slowa;
 }
 
