@@ -2,21 +2,21 @@
 #include <string>
 #include <vector>
 
-bool contains_all(std::vector<int>& dUpa, std::vector<int>& kys)
+bool contains_all(std::vector<int>&a, std::vector<int>& b)
 {
     int testowana;
     std::vector<int> ok;
-    for(int i = 0; i < dUpa.size(); i++)
+    for(int i = 0; i <a.size(); i++)
     {
-        for(int x = 0; x < kys.size(); x++)
+        for(int x = 0; x < b.size(); x++)
         {            
-            if(dUpa[i] == kys[x])
+            if(a[i] == b[x])
             {
-                ok.push_back(kys[x]);
+                ok.push_back(b[x]);
             }
         }
     }
-    if(dUpa.size() == ok.size())
+    if(a.size() == ok.size())
     {
         return true;
     }
