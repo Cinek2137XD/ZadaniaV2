@@ -72,15 +72,15 @@ std::string best_groups_name(std::vector<group>& in) //porównuje mediany grup
 
 int main()
 {
-    student marcin {"Marcin", "Kukus", {2,3,4}}, 
+    student marcin {"Marcin", "Kukus", {2,3,4}},  //definiowani studenci
     mateusz {"Mateusz","Placha",{3,4,4}}, 
     olek {"Aleksander", "Kaczorowski",{2,3,4}}, 
     kon {"Bartek","Konix",{4,5,4}};;
     std::vector<student>v {marcin,mateusz}, k {kon, olek};
-    group c {"19c",v}, a{"10a",k};
+    group c {"19c",v}, a{"10a",k}; //stworzenie grup i przypisanie studentów
 
-    std::vector<group>b {c,a};
+    std::vector<group>b {c,a}; //dodanie grup do wektora
 
-    std::cout<<best_groups_name(b);    
+    std::cout<<best_groups_name(b);    //wykonanie funkcji best groups po przekazaniu wektora grup z linijki 82
     return 0;
 }

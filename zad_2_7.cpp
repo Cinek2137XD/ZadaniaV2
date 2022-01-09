@@ -12,6 +12,7 @@ void add_to_group(std::string name, group* grupa)
 {
     grupa->studenci.push_back(name);   
 }
+
 int main()
 {
     std::vector<std::string> studen = {"Marcin", "Mateusz", "Hubert","Jakub"};
