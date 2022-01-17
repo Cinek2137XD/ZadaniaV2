@@ -10,7 +10,7 @@ int main(int argc,char* argv[])
     int losowa,trafione;
     std::vector<char> match;
     srand(time(NULL));
-    for(int i = 0; i>argc; i++)
+    for(int i = 0; i<argc; i++)
     {
         losowa = rand() % 10+1;
         if (losowa == std::stoi(argv[i]))
